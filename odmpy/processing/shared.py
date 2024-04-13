@@ -409,7 +409,7 @@ def merge_into_mp3(
             "-b:a",
             f"{audio_bitrate}k"
             if audio_bitrate
-            else "64k",  # explicitly set audio bitrate
+            else "128k",  # explicitly set audio bitrate
             "-f",
             "mp3",
             str(temp_book_filename),
@@ -476,7 +476,7 @@ def convert_to_m4b(
             "-b:a",
             f"{audio_bitrate}k"
             if audio_bitrate
-            else "64k",  # explicitly set audio bitrate
+            else "128k",  # explicitly set audio bitrate
         ]
     )
     if cover_filename.exists():
